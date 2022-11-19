@@ -2,7 +2,7 @@ package school.mjc.stage0.loops.task4;
 
 public class TwoRangesSum {
     public static void main(String[] args) {
-        printSumOfTwoRanges(4, 7); ///
+        printSumOfTwoRanges(10, 10); ///
     }
 
     public static void printSumOfTwoRanges(int numberToSkip, int lastInRow) {
@@ -19,13 +19,17 @@ public class TwoRangesSum {
                 skippedSum= counterL + sumL;
                 sumL = skippedSum;
                 if (counterL == numberToSkip) {
-                    System.out.println("skipped sum is number " + skippedSum); }
+                    System.out.println("skipped sum is " + skippedSum); }
+            } if(lastInRow==numberToSkip){
+                System.out.println("counted sum is 0");
             }
             for (int counter = numberToSkip+1; counter <= lastInRow; counter++) {
                     countedSum = counter + sum;
                     sum = countedSum;
+
                     if (counter == lastInRow) {
-                        System.out.println("counted sum is number " + countedSum); }
+                        System.out.println("counted sum is " + countedSum); }
+
                 }
             }
 
