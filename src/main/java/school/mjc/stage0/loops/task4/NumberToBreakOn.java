@@ -5,13 +5,12 @@ public class NumberToBreakOn {
         printNumbersUntilWithBreakOn(6,5);
     }
     public static void printNumbersUntilWithBreakOn(int toBreakWith, int numberToGoUntil) {
+        System.out.println("iterating till the end");
         for (int counter=1;counter<=numberToGoUntil;counter++){
 
             if(counter==toBreakWith){
                 break;
             }
-
-            if(numberToGoUntil==counter){ System.out.print("iterating till the end ");}
             System.out.println(counter);
         }
 
