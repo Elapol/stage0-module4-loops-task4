@@ -11,7 +11,7 @@ public class TwoRangesSum {
         if (lastInRow < 0) {
             System.out.println("last number in row is negative");
         } else if (numberToSkip > lastInRow) {
-            System.out.println("number to skip is bigger then the last");
+            System.out.println("number to skip is bugger then the last");
         } else {
             for (int counter = 1; counter <= lastInRow; counter++) {
                 if (counter != numberToSkip) {
